@@ -1,0 +1,13 @@
+# This file specifies files that are *not* uploaded to Google Cloud
+# Defaults similar to .gitignore
+node_modules/
+npm-debug.log
+.git/
+.gitignore
+.env
+.env.*
+Dockerfile
+.vscode/
+dist/
+coverage/
+README.md

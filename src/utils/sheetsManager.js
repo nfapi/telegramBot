@@ -1,12 +1,11 @@
-const { google } = require('googleapis');  
+const { google } = require('googleapis');
 const { getAuthClient } = require('./googleAuth');
-
 
 // Cache for spreadsheet data to avoid repeated API calls
 const sheetCache = {};
 
 /**
- * Get or create a sheet for a user
+ * Get or create a sheet for a user 
  */
 async function getUserSheet(senderPhone) {
   try {
