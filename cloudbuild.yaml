@@ -18,6 +18,8 @@ steps:
       - '--platform'
       - 'managed'
       - '--allow-unauthenticated'
+      - '--set-env-vars'
+      - 'BOT_TYPE=telegram,TELEGRAM_BOT_TOKEN=$_TELEGRAM_BOT_TOKEN,GOOGLE_SHEETS_ID=$_GOOGLE_SHEETS_ID,GOOGLE_CLIENT_EMAIL=$_GOOGLE_CLIENT_EMAIL,GOOGLE_PRIVATE_KEY=$_GOOGLE_PRIVATE_KEY'
 
 images:
   - 'gcr.io/$PROJECT_ID/expense-bot:$SHORT_SHA'
